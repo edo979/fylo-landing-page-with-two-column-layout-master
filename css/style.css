@@ -114,11 +114,16 @@ h3,
 .nav_link {
   font-size: 0.75rem;
   font-weight: 700;
-  color: #070439;
+  color: #585989;
   text-decoration: none;
 }
 .nav_link + .nav_link {
   margin-left: 25px;
+}
+
+.header h1,
+.header p {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
