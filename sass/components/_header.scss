@@ -16,7 +16,7 @@
   p {
     margin-block: 30px;
     padding-inline: 15px;
-    font-size: 0.9rem;
+    font-size: var(--fs-500);
   }
 
   form {
@@ -37,7 +37,7 @@
     line-height: 1;
 
     &::placeholder {
-      font-size: 0.8rem;
+      font-size: var(--fs-200);
       color: $Light-Gray;
     }
 
