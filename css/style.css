@@ -103,6 +103,10 @@ h3,
   margin-top: 23px;
 }
 
+.header {
+  margin-top: 95px;
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
@@ -124,6 +128,37 @@ h3,
 .header h1,
 .header p {
   text-align: center;
+  text-shadow: 0 0 #070439;
+}
+.header img {
+  margin-bottom: 30px;
+}
+.header h1 {
+  line-height: 1.5;
+}
+.header p {
+  margin-block: 30px;
+  padding-inline: 15px;
+  font-size: 0.9rem;
+}
+.header form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-inline: 10px;
+}
+.header form input,
+.header form .btn {
+  border-radius: 3px;
+}
+.header input {
+  padding: 8px 20px;
+  line-height: 1;
+  border: 1px solid #070439;
+}
+.header input::placeholder {
+  font-size: 0.8rem;
+  color: #bfbfbf;
 }
 
 /*# sourceMappingURL=style.css.map */

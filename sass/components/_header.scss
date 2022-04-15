@@ -2,5 +2,45 @@
   h1,
   p {
     text-align: center;
+    text-shadow: 0 0 $Very-Dark-Blue;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  h1 {
+    line-height: 1.5;
+  }
+
+  p {
+    margin-block: 30px;
+    padding-inline: 15px;
+    font-size: 0.9rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    padding-inline: 10px;
+
+    input,
+    .btn {
+      border-radius: 3px;
+    }
+  }
+
+  input {
+    padding: 8px 20px;
+    line-height: 1;
+
+    &::placeholder {
+      font-size: 0.8rem;
+      color: $Light-Gray;
+    }
+
+    border: 1px solid $Very-Dark-Blue;
   }
 }
