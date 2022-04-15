@@ -25,22 +25,5 @@
     gap: 15px;
 
     padding-inline: 10px;
-
-    input,
-    .btn {
-      border-radius: 3px;
-    }
-  }
-
-  input {
-    padding: 8px 20px;
-    line-height: 1;
-
-    &::placeholder {
-      font-size: var(--fs-200);
-      color: $Light-Gray;
-    }
-
-    border: 1px solid $Very-Dark-Blue;
   }
 }

@@ -4,10 +4,23 @@
   margin-inline: auto;
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 .nav {
   margin-top: 23px;
 }
 
 .header {
   margin-top: 95px;
+}
+
+.main {
+  margin-top: 90px;
+}
+
+.cta {
+  margin-top: 80px;
 }
