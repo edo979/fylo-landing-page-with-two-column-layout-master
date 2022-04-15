@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_logo {
+    width: 80px;
+  }
+
+  &_link {
+    & + & {
+      margin-left: 25px;
+    }
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: $Very-Dark-Blue;
+
+    text-decoration: none;
+  }
+}
