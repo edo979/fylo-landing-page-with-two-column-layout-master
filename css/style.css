@@ -161,4 +161,14 @@ h3,
   color: #bfbfbf;
 }
 
+.btn {
+  padding: 10px;
+  border: none;
+  background-color: #3065f8;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: #f6f6fe;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 /*# sourceMappingURL=style.css.map */
