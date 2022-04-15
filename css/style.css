@@ -1,4 +1,5 @@
 /* Box sizing rules */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap");
 *,
 *::before,
 *::after {
@@ -71,6 +72,24 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+.nav_link,
+.btn {
+  font-family: "Raleway", sans-serif;
+}
+
+.lead {
+  font-size: 1.05rem;
 }
 
 /*# sourceMappingURL=style.css.map */

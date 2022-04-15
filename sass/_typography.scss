@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+.nav_link,
+.btn {
+  font-family: 'Raleway', sans-serif;
+}
+
+// Utility
+.lead {
+  font-size: 1.05rem;
+}
