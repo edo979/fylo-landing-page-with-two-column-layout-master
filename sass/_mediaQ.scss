@@ -80,6 +80,8 @@
 
   // Components:
   .nav {
+    margin-top: 65px;
+
     &_logo {
       width: 166px;
     }
@@ -90,6 +92,8 @@
   }
 
   .header {
+    margin-top: 70px;
+
     h1,
     p {
       text-align: left;
@@ -97,14 +101,23 @@
     h1 {
       font-size: 2.55rem;
       padding-inline-end: 40px;
+      line-height: 1.45;
     }
     p {
-      font-size: 1.1rem;
+      margin: 15px 0 25px;
+      padding-inline-start: 0;
       padding-inline-end: 120px;
+      font-size: 1.1rem;
+      line-height: 1.4;
     }
     form {
+      padding-inline: 0;
       input {
         width: 320px;
+        line-height: 1.6;
+        &::placeholder {
+          font-size: 0.9rem;
+        }
       }
 
       .btn {
