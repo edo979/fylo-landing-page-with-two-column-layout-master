@@ -120,6 +120,7 @@ p {
 
 .grid-container {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
 }
 
 .flex {
@@ -367,6 +368,62 @@ input::placeholder {
 
 .attribution {
   margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+  .container,
+.md\:grid-container {
+    width: min(1440px, 90vw);
+  }
+
+  .md\:grid-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+  }
+  .md\:grid-container--reverse {
+    direction: rtl;
+  }
+
+  .md\:col-1 {
+    grid-column: span 1;
+  }
+
+  .md\:col-3 {
+    grid-column: span 3;
+  }
+
+  .md\:col-4 {
+    grid-column: span 4;
+  }
+
+  .md\:col-5 {
+    grid-column: span 5;
+  }
+
+  .md\:col-6 {
+    grid-column: span 6;
+  }
+
+  .md\:col-7 {
+    grid-column: span 7;
+  }
+
+  .md\:col-12 {
+    grid-column: span 12;
+  }
+
+  .md\:col-8-to-12 {
+    grid-column: 8/13;
+  }
+
+  .cta .md\:grid-container {
+    align-items: start;
+  }
+
+  .md\:justify-center {
+    justify-self: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
