@@ -79,6 +79,7 @@ select {
   --fs-300: 0.844rem;
   --fs-400: 0.89rem;
   --fs-500: 0.9rem;
+  --fs-550: 1rem;
   --fs-800: 1.075rem;
 }
 
@@ -136,6 +137,10 @@ p {
 
 .cta {
   margin-top: 80px;
+}
+
+.footer {
+  padding-top: 60px;
 }
 
 .nav {
@@ -303,6 +308,61 @@ input::placeholder {
 }
 .cta_form .btn {
   font-size: var(--fs-100);
+}
+
+.footer {
+  background-color: #070439;
+  color: #f6f6fe;
+}
+.footer .grid-container {
+  display: grid;
+  row-gap: 45px;
+}
+.footer_logo svg path {
+  fill: white;
+}
+.footer .flex {
+  gap: 20px;
+}
+.footer_contacts > * + * {
+  margin-top: 15px;
+}
+.footer_contacts p {
+  font-size: var(--fs-550);
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: start;
+}
+.footer-nav_link {
+  text-decoration: none;
+  color: #f6f6fe;
+}
+
+.social {
+  justify-content: center;
+}
+.social div {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #f6f6fe;
+  border-radius: 50%;
+  padding: 7px;
+}
+.social div:first-child {
+  padding: 9px;
+}
+.social svg path {
+  fill: #f6f6fe;
+}
+
+.attribution {
+  margin-top: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
