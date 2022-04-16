@@ -158,6 +158,7 @@
       }
 
       p {
+        color: $Very-Dark-Blue;
         padding-inline-end: 200px;
       }
     }
@@ -168,7 +169,6 @@
     }
 
     p {
-      color: $Very-Dark-Blue;
     }
 
     &_link {
@@ -208,6 +208,55 @@
     }
     &_position {
       font-size: 0.65rem;
+    }
+  }
+
+  .cta {
+    margin-top: 105px;
+    padding-block: 95px;
+
+    h2 {
+      font-size: 1.95rem;
+    }
+
+    &_text {
+      padding: 0;
+      padding-inline-end: 40px;
+
+      > * + * {
+        margin-top: 0;
+      }
+    }
+
+    &_form {
+      form {
+        max-width: 100%;
+        margin-inline: 0;
+
+        align-items: start;
+        gap: 15px;
+
+        input,
+        .btn {
+          padding-block: 12px;
+        }
+
+        input {
+          width: 480px;
+        }
+
+        .btn {
+          width: 200px;
+        }
+      }
+    }
+  }
+
+  .footer {
+    padding-top: 110px;
+
+    .grid-container {
+      row-gap: 20px;
     }
   }
 }

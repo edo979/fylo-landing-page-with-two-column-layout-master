@@ -91,13 +91,11 @@
 
 .cta {
   padding-block: 60px;
-
   background-color: $Desaturated-Blue;
-  color: $Light-Grayish-Blue;
-
   text-align: center;
 
   &_text {
+    color: $Light-Grayish-Blue;
     padding-inline: 15px;
 
     > * + * {

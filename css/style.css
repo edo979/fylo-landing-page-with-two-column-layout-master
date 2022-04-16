@@ -286,10 +286,10 @@ input::placeholder {
 .cta {
   padding-block: 60px;
   background-color: #585989;
-  color: #f6f6fe;
   text-align: center;
 }
 .cta_text {
+  color: #f6f6fe;
   padding-inline: 15px;
 }
 .cta_text > * + * {
@@ -518,14 +518,12 @@ input::placeholder {
     margin-top: 20px;
   }
   .main_text p {
+    color: #070439;
     padding-inline-end: 200px;
   }
   .main h2 {
     font-size: 2.55rem;
     line-height: 2;
-  }
-  .main p {
-    color: #070439;
   }
   .main_link {
     justify-content: start;
@@ -559,6 +557,44 @@ input::placeholder {
   }
   .author_position {
     font-size: 0.65rem;
+  }
+
+  .cta {
+    margin-top: 105px;
+    padding-block: 95px;
+  }
+  .cta h2 {
+    font-size: 1.95rem;
+  }
+  .cta_text {
+    padding: 0;
+    padding-inline-end: 40px;
+  }
+  .cta_text > * + * {
+    margin-top: 0;
+  }
+  .cta_form form {
+    max-width: 100%;
+    margin-inline: 0;
+    align-items: start;
+    gap: 15px;
+  }
+  .cta_form form input,
+.cta_form form .btn {
+    padding-block: 12px;
+  }
+  .cta_form form input {
+    width: 480px;
+  }
+  .cta_form form .btn {
+    width: 200px;
+  }
+
+  .footer {
+    padding-top: 110px;
+  }
+  .footer .grid-container {
+    row-gap: 20px;
   }
 }
 
