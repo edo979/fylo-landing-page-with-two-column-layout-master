@@ -50,6 +50,17 @@
         border-bottom: 1px solid $Moderate-Cyan;
       }
     }
+
+    &:hover,
+    &:focus {
+      a {
+        color: $Moderate-Cyan-300;
+
+        &::after {
+          border-color: $Moderate-Cyan-300;
+        }
+      }
+    }
   }
 }
 

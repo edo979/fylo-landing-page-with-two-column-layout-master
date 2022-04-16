@@ -281,6 +281,12 @@ form .error {
   width: 135px;
   border-bottom: 1px solid #3c9f8f;
 }
+.main_link:hover a, .main_link:focus a {
+  color: #7ecec1;
+}
+.main_link:hover a::after, .main_link:focus a::after {
+  border-color: #7ecec1;
+}
 
 .testimonial {
   margin-inline: auto;
