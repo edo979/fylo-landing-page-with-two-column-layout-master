@@ -225,6 +225,22 @@ input::placeholder {
   font-size: var(--fs-200);
   color: #bfbfbf;
 }
+input:invalid {
+  border-color: palevioletred;
+}
+input:invalid + p {
+  display: block;
+}
+input:valid + p {
+  display: none;
+}
+
+form .error {
+  margin: 0;
+  padding: 0;
+  color: palevioletred;
+  text-align: left;
+}
 
 .main section:first-child {
   padding-top: 90px;

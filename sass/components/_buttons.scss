@@ -33,4 +33,24 @@ input {
   }
 
   border: 1px solid $Very-Dark-Blue;
+
+  &:invalid {
+    border-color: palevioletred;
+  }
+
+  &:invalid + p {
+    display: block;
+  }
+
+  &:valid + p {
+    display: none;
+  }
+}
+
+form .error {
+  margin: 0;
+  padding: 0;
+
+  color: palevioletred;
+  text-align: left;
 }
