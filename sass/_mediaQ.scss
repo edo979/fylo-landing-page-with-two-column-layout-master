@@ -62,6 +62,11 @@
 
   // Components:
   .header {
+    h1,
+    p {
+      text-align: left;
+    }
+
     form {
       flex-direction: row;
     }
@@ -70,12 +75,27 @@
       margin: 0;
     }
   }
+
+  .main {
+    h2,
+    p {
+      text-align: left;
+    }
+  }
 }
 
 @media (min-width: 992px) {
+  // Typography:
+  :root {
+    --fs-100: 0.85rem;
+    --fs-400: 1rem;
+  }
   // Layout:
   .header {
     margin-top: 80px;
+  }
+  .main {
+    margin-top: 200px;
   }
 
   // Components:
@@ -94,10 +114,6 @@
   .header {
     margin-top: 70px;
 
-    h1,
-    p {
-      text-align: left;
-    }
     h1 {
       font-size: 2.55rem;
       padding-inline-end: 40px;
@@ -123,6 +139,75 @@
       .btn {
         width: 200px;
       }
+    }
+  }
+
+  .main {
+    section:first-child {
+      padding-top: 150px;
+
+      background-image: url(../images/bg-curve-desktop.svg),
+        linear-gradient($Light-Grayish-Blue, White);
+      background-position: top, 0 70px;
+      background-size: 100% 100px, cover;
+    }
+
+    &_text {
+      > * + * {
+        margin-top: 20px;
+      }
+
+      p {
+        padding-inline-end: 200px;
+      }
+    }
+
+    h2 {
+      font-size: 2.55rem;
+      line-height: 2;
+    }
+
+    p {
+      color: $Very-Dark-Blue;
+    }
+
+    &_link {
+      justify-content: start;
+      a {
+        font-size: var(--fs-400);
+      }
+    }
+
+    &_img {
+      margin: 0;
+    }
+  }
+
+  .testimonial {
+    max-width: 355px;
+    margin-inline-start: 0;
+    padding: 30px !important;
+
+    > * + * {
+      margin-top: 15px;
+    }
+
+    > img {
+      height: 15px;
+    }
+  }
+
+  .author {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+    &_name {
+      font-size: 0.7rem;
+      text-shadow: 0 0 black;
+    }
+    &_position {
+      font-size: 0.65rem;
     }
   }
 }
