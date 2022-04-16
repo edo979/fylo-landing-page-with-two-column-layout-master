@@ -77,10 +77,23 @@
   }
 
   .main {
+    section:first-child {
+      background-image: url(../images/bg-curve-desktop.svg),
+        linear-gradient($Light-Grayish-Blue, White);
+      background-position: top, 0 70px;
+      background-size: 100% 100px, cover;
+    }
     h2,
     p {
       text-align: left;
     }
+    &_link {
+      justify-content: start;
+    }
+  }
+
+  .testimonial {
+    margin-inline-start: 0;
   }
 }
 
@@ -145,11 +158,6 @@
   .main {
     section:first-child {
       padding-top: 150px;
-
-      background-image: url(../images/bg-curve-desktop.svg),
-        linear-gradient($Light-Grayish-Blue, White);
-      background-position: top, 0 70px;
-      background-size: 100% 100px, cover;
     }
 
     &_text {
@@ -172,7 +180,6 @@
     }
 
     &_link {
-      justify-content: start;
       a {
         font-size: var(--fs-400);
       }
@@ -185,7 +192,6 @@
 
   .testimonial {
     max-width: 355px;
-    margin-inline-start: 0;
     padding: 30px !important;
 
     > * + * {

@@ -123,6 +123,10 @@ p {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.col-12 {
+  grid-column: span 12;
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -450,9 +454,21 @@ input::placeholder {
     margin: 0;
   }
 
+  .main section:first-child {
+    background-image: url(../images/bg-curve-desktop.svg), linear-gradient(#f6f6fe, White);
+    background-position: top, 0 70px;
+    background-size: 100% 100px, cover;
+  }
   .main h2,
 .main p {
     text-align: left;
+  }
+  .main_link {
+    justify-content: start;
+  }
+
+  .testimonial {
+    margin-inline-start: 0;
   }
 }
 @media (min-width: 992px) {
@@ -510,9 +526,6 @@ input::placeholder {
 
   .main section:first-child {
     padding-top: 150px;
-    background-image: url(../images/bg-curve-desktop.svg), linear-gradient(#f6f6fe, White);
-    background-position: top, 0 70px;
-    background-size: 100% 100px, cover;
   }
   .main_text > * + * {
     margin-top: 20px;
@@ -525,9 +538,6 @@ input::placeholder {
     font-size: 2.55rem;
     line-height: 2;
   }
-  .main_link {
-    justify-content: start;
-  }
   .main_link a {
     font-size: var(--fs-400);
   }
@@ -537,7 +547,6 @@ input::placeholder {
 
   .testimonial {
     max-width: 355px;
-    margin-inline-start: 0;
     padding: 30px !important;
   }
   .testimonial > * + * {

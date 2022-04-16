@@ -9,6 +9,10 @@
   grid-template-columns: repeat(12, 1fr);
 }
 
+.col-12 {
+  grid-column: span 12;
+}
+
 .flex {
   display: flex;
   align-items: center;
