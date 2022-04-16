@@ -373,7 +373,7 @@ input::placeholder {
 @media (min-width: 768px) {
   .container,
 .md\:grid-container {
-    width: min(1440px, 90vw);
+    width: min(1280px, 90vw);
   }
 
   .md\:grid-container {
@@ -437,6 +437,44 @@ input::placeholder {
 
   .md\:justify-center {
     justify-self: center;
+  }
+
+  .header form {
+    flex-direction: row;
+  }
+  .header img {
+    margin: 0;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    margin-top: 80px;
+  }
+
+  .nav_logo {
+    width: 166px;
+  }
+  .nav_link {
+    font-size: 1.055rem;
+  }
+
+  .header h1,
+.header p {
+    text-align: left;
+  }
+  .header h1 {
+    font-size: 2.55rem;
+    padding-inline-end: 40px;
+  }
+  .header p {
+    font-size: 1.1rem;
+    padding-inline-end: 120px;
+  }
+  .header form input {
+    width: 320px;
+  }
+  .header form .btn {
+    width: 200px;
   }
 }
 

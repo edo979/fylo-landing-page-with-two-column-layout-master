@@ -2,7 +2,7 @@
   // Layout
   .container,
   .md\:grid-container {
-    width: min(1440px, 90vw);
+    width: min(1280px, 90vw);
   }
 
   .md\:grid-container {
@@ -58,5 +58,58 @@
 
   .md\:justify-center {
     justify-self: center;
+  }
+
+  // Components:
+  .header {
+    form {
+      flex-direction: row;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  // Layout:
+  .header {
+    margin-top: 80px;
+  }
+
+  // Components:
+  .nav {
+    &_logo {
+      width: 166px;
+    }
+
+    &_link {
+      font-size: 1.055rem;
+    }
+  }
+
+  .header {
+    h1,
+    p {
+      text-align: left;
+    }
+    h1 {
+      font-size: 2.55rem;
+      padding-inline-end: 40px;
+    }
+    p {
+      font-size: 1.1rem;
+      padding-inline-end: 120px;
+    }
+    form {
+      input {
+        width: 320px;
+      }
+
+      .btn {
+        width: 200px;
+      }
+    }
   }
 }
