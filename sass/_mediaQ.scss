@@ -9,10 +9,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     align-items: center;
-
-    &--reverse {
-      direction: rtl;
-    }
+    grid-auto-flow: dense;
   }
 
   .md\:col-1 {
@@ -37,7 +34,19 @@
     grid-column: span 12;
   }
 
-  .md\:col-8-to-12 {
+  .md\:col-1-to-8 {
+    grid-column: 1 / 8;
+  }
+  .md\:col-8-to-13 {
+    grid-column: 8 / 13;
+  }
+  .md\:col-1-to-7 {
+    grid-column: 1 / 7;
+  }
+  .md\:col-7-to-13 {
+    grid-column: 7 / 13;
+  }
+  .md\:col-8-to-13 {
     grid-column: 8 / 13;
   }
 
