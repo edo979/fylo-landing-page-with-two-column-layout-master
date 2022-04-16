@@ -16,5 +16,12 @@
     color: $Desaturated-Blue;
 
     text-decoration: none;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
   }
 }

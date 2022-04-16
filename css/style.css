@@ -165,9 +165,13 @@ p {
   font-weight: 700;
   color: #585989;
   text-decoration: none;
+  cursor: pointer;
 }
 .nav_link + .nav_link {
   margin-left: 25px;
+}
+.nav_link:hover, .nav_link:focus {
+  text-decoration: underline;
 }
 
 .header h1,
@@ -201,6 +205,10 @@ p {
   font-weight: 700;
   color: #f6f6fe;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+.btn:hover, .btn:focus {
+  background-color: #84a4fb;
 }
 
 input,
@@ -349,6 +357,9 @@ input::placeholder {
   text-decoration: none;
   color: #f6f6fe;
 }
+.footer-nav_link:hover, .footer-nav_link:focus {
+  color: #84a4fb;
+}
 
 .social {
   justify-content: center;
@@ -365,6 +376,13 @@ input::placeholder {
 }
 .social div:first-child {
   padding: 9px;
+}
+.social div:hover, .social div:focus {
+  border-color: #84a4fb;
+  cursor: pointer;
+}
+.social div:hover svg path, .social div:focus svg path {
+  fill: #84a4fb;
 }
 .social svg path {
   fill: #f6f6fe;

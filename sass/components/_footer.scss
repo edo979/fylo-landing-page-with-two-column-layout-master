@@ -38,6 +38,11 @@
     &_link {
       text-decoration: none;
       color: $Light-Grayish-Blue;
+
+      &:hover,
+      &:focus {
+        color: $Bright-Blue-300;
+      }
     }
   }
 }
@@ -58,6 +63,17 @@
 
     &:first-child {
       padding: 9px;
+    }
+
+    &:hover,
+    &:focus {
+      border-color: $Bright-Blue-300;
+
+      svg path {
+        fill: $Bright-Blue-300;
+      }
+
+      cursor: pointer;
     }
   }
 
