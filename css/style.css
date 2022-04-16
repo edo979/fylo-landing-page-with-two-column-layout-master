@@ -246,7 +246,8 @@ form .error {
   padding-top: 90px;
   background-image: url(../images/bg-curve-mobile.svg), linear-gradient(#f6f6fe, White);
   background-repeat: no-repeat;
-  background-position: top, center 50px;
+  background-position: top, 0 35px;
+  background-size: 100% 50px, cover;
 }
 .main_img {
   margin-bottom: 85px;

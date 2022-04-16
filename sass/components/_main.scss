@@ -5,7 +5,8 @@
     background-image: url(../images/bg-curve-mobile.svg),
       linear-gradient($Light-Grayish-Blue, White);
     background-repeat: no-repeat;
-    background-position: top, center 50px;
+    background-position: top, 0 35px;
+    background-size: 100% 50px, cover;
   }
 
   &_img {
